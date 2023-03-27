@@ -20,6 +20,8 @@ body {
   letter-spacing: 0.03em;
 }
 
+/* * {  outline: 1px solid red;} */
+
 .container {
   width: 1200px;
   padding: 0 15px;
@@ -41,7 +43,6 @@ p {
   margin-bottom: 0;
 }
 
-
 .list {
   margin-top: 0;
   margin-bottom: 0;
@@ -51,10 +52,9 @@ p {
 
 /* Navigation */
 .main-nav {
-display: flex;
-align-items: center;
+  display: flex;
+  align-items: center;
 }
-
 
 .navigation {
   display: flex;
@@ -133,9 +133,11 @@ header .logo {
   color: var(--accent-color);
 }
 
+
 /* Hero */
 .hero {
   text-align: center;
+  padding-top: 200px;
 }
 
 .hero-title {
@@ -144,9 +146,25 @@ header .logo {
   line-height: 1.36;
   letter-spacing: 0.06em;
   text-transform: uppercase;
-  margin-top: 0;
-  margin-bottom: 30px;
-  /* color: var(--primary-bgc); */
+  margin: 0px auto 30px;
+
+  width: 700px;
+  color: var(--primary-bgc);
+}
+
+.overlay {
+  max-width: 1600px;
+  height: 600px;
+  margin: 0 auto;
+
+  background-image: linear-gradient(
+      rgba(47, 48, 58, 0.4),
+      rgba(47, 48, 58, 0.4)
+    ),
+    url(../images/overlay.jpg), url(../images/Bg.svg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
 }
 
 /* Buttons */
@@ -201,17 +219,59 @@ header .logo {
   flex-wrap: wrap;
 }
 
-.preference.list .item:not(:nth-child(4n)){
+.preference.list .item:not(:nth-child(4n)) {
   margin-right: 30px;
 }
 
-.preference.list .item:not(:nth-last-child(-n+4)) { 
+.preference.list .item:not(:nth-last-child(-n + 4)) {
   margin-bottom: 30px;
 }
 
 .preference .item {
   width: 270px;
 }
+
+.preference .item::before {
+  display: block;
+  content: "";
+  width: 100%;
+  height: 120px;
+  border-radius: 4px;
+  margin-bottom: 30px;
+}
+
+
+.icon-antenna::before {
+  background-image: url(../images/antenna.svg), url(../images/rectangle.svg);
+  background-position: center;
+  background-size: 65.32px 70px, contain;
+  background-repeat: no-repeat;
+}
+
+
+.icon-clock::before {
+  background-image: url(../images/clock.svg), url(../images/rectangle.svg);
+  background-position: center;
+  background-size: 70px 70px, contain;
+  background-repeat: no-repeat;
+}
+
+
+.icon-diagram::before {
+  background-image: url(../images/diagram.svg), url(../images/rectangle.svg);
+  background-position: center;
+  background-size: 70px 70px, contain;
+  background-repeat: no-repeat;
+}
+
+
+.icon-astronaut::before {
+  background-image: url(../images/astronaut.svg), url(../images/rectangle.svg);
+  background-position: center;
+  background-size: 70px 70px, contain;
+  background-repeat: no-repeat;
+}
+
 
 .preference-title {
   font-weight: 700;
@@ -255,14 +315,15 @@ header .logo {
   background-color: var(--secondary-bgc);
 }
 
-.team-members.list{
+.team-members.list {
   display: flex;
 }
 
 .team-members .item {
-  background: #FFFFFF;
-box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
-border-radius: 0px 0px 4px 4px;
+  background: #ffffff;
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
+    0px 2px 1px rgba(0, 0, 0, 0.2);
+  border-radius: 0px 0px 4px 4px;
 }
 
 .team-members .item:not(:last-child) {
@@ -306,7 +367,7 @@ footer .logo {
   margin-bottom: 50px;
 }
 
-.nav .item:not(:last-child){
+.nav .item:not(:last-child) {
   margin-right: 8px;
 }
 
