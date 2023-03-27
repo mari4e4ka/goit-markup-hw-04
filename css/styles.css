@@ -312,7 +312,9 @@ header .logo {
 
 /* Our team */
 .team {
+  /* max-width: 1600px; */
   background-color: var(--secondary-bgc);
+  background-position: center;
 }
 
 .team-members.list {
@@ -348,6 +350,16 @@ header .logo {
   text-align: center;
 }
 
+/* Footer */
+
+.footerbg {
+  max-width: 1600px;
+  height: 251px;
+  margin: 0 auto;
+  background-image: url(../images/footerbg.svg);
+  background-position: center;
+}
+
 .footer.list {
   padding-top: 60px;
   padding-bottom: 60px;
@@ -357,9 +369,53 @@ footer .logo {
   margin-bottom: 28px;
 }
 
+.fcol {
+  color: var(--primary-bgc);
+}
+
 .footer-item {
   margin-top: 12px;
 }
+
+footer .container {
+  display: flex;
+}
+
+.joinus {
+  margin: 72px 0 0 70px;
+}
+
+.join {
+margin-bottom: 20px;
+font-style: normal;
+font-weight: 700;
+line-height: 16px;
+letter-spacing: 1.14;
+text-transform: uppercase;
+
+color: var(--primary-bgc);
+}
+
+.join-items {
+  display: flex;
+}
+
+footer .item {
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  background-image: url(../images/ellipse.svg);
+  margin-right: 10px;
+}
+
+footer .item:hover {
+  background-color: var(--accent-color);
+}
+
+.smlink {
+  margin: 12px;
+}
+
 /* Portfolio */
 .nav {
   display: flex;
