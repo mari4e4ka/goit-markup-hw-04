@@ -350,6 +350,38 @@ header .logo {
   text-align: center;
 }
 
+.smlist {
+  display: flex;
+  margin: 0 32px 30px 32px;
+  padding: 0;
+}
+
+.smlist-item {
+  width: 44px;
+  height: 44px;
+}
+
+.smlist-item:not(:last-child) {
+  margin-right: 10px;
+}
+
+.smlist-item:hover,
+.smlist-item:focus {
+  background-color: var(--accent-color);
+  border-radius: 50%;
+}
+
+.smhref {
+  width: 44px;
+  height: 44px;
+  padding: 12px;
+}
+
+.smhref:hover,
+.smhref:focus {
+  fill: var(--primary-bgc);
+}
+
 /* Footer */
 
 .footerbg {
