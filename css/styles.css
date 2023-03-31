@@ -7,7 +7,7 @@
 
   --accent-color: #2196f3;
   --logo-color: #000000;
-  --sm-color: #AFB1B8;
+  --sm-color: #afb1b8;
 }
 
 body {
@@ -136,7 +136,7 @@ header .contact-item {
 .contact-item:focus {
   color: var(--accent-color);
   fill: var(--accent-color);
-  }
+}
 
 .icon-envelope,
 .icon-smartphone {
@@ -253,7 +253,6 @@ header .contact-item {
   border-radius: 4px;
   margin-bottom: 30px;
 }
-
 
 .preference-title {
   font-weight: 700;
@@ -379,7 +378,7 @@ header .contact-item {
   margin-bottom: 30px;
 }
 
-.clients-item:nth-last-child(-n+6) {
+.clients-item:nth-last-child(-n + 6) {
   margin-bottom: 0;
 }
 
@@ -391,14 +390,14 @@ header .contact-item {
   display: block;
   width: 170px;
   height: 92px;
-  border: 1px solid #AFB1B8;
-  border-radius: 4px; 
+  border: 1px solid #afb1b8;
+  border-radius: 4px;
   fill: var(--sm-color);
 }
 
 .clients-link:hover,
 .clients-list:focus {
-  border-color: var(--accent-color);  
+  border-color: var(--accent-color);
   fill: var(--accent-color);
 }
 
@@ -406,7 +405,7 @@ header .contact-item {
   width: 106px;
   height: 60px;
   margin: 16px 32px;
-} 
+}
 
 /* Footer */
 
@@ -444,14 +443,14 @@ footer .container {
 }
 
 .join {
-margin-bottom: 20px;
-font-style: normal;
-font-weight: 700;
-line-height: 16px;
-letter-spacing: 1.14;
-text-transform: uppercase;
+  margin-bottom: 20px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 16px;
+  letter-spacing: 1.14;
+  text-transform: uppercase;
 
-color: var(--primary-bgc);
+  color: var(--primary-bgc);
 }
 
 .join-items {
@@ -502,12 +501,13 @@ footer .item:hover {
   margin: 15px;
 
   background: var(--primary-bgc);
-  border: 1px solid #EEEEEE;
+  border: 1px solid #eeeeee;
 }
 
 .exemples .item:hover,
 .exemples .item:focus {
-  box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
+  box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
+    1px 4px 6px rgba(0, 0, 0, 0.16);
 }
 
 .exemples-container {
@@ -549,7 +549,6 @@ margin-bottom: 0;
   background-color: var(--accent-color);
   text-decoration: none;
 }
-
 
 /* Contacts */
 
