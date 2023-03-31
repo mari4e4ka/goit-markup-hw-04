@@ -98,7 +98,7 @@ p {
 }
 
 header .logo {
-  margin: 24px 93px 25px 0;
+  padding: 24px 93px 25px 0;
 }
 
 .accent {
@@ -115,14 +115,17 @@ header .logo {
 }
 
 .contact-item {
-  padding-top: 32px;
-  padding-bottom: 32px;
-
   font-weight: 500;
   line-height: 1.14;
   letter-spacing: 0.02em;
   text-decoration: none;
   color: var(--main-text-color);
+  fill: var(--main-text-color);
+}
+
+header .contact-item {
+  padding-top: 32px;
+  padding-bottom: 32px;
 }
 
 .main .contact-item {
@@ -132,6 +135,7 @@ header .logo {
 .contact-item:hover,
 .contact-item:focus {
   color: var(--accent-color);
+  fill: var(--accent-color);
   }
 
 .icon-envelope,
@@ -139,12 +143,6 @@ header .logo {
   width: 16px;
   height: 12px;
   margin: 2px 10px 2px 0;
-  fill: var(--main-text-color)
-}
-
-.icon-envelope:hover,
-.icon-envelope:focus {
-  fill: var(--accent-color);
 }
 
 /* Hero */
@@ -276,7 +274,8 @@ header .logo {
 
 .activity-title,
 .team-title,
-.clients-title {
+.clients-title,
+.contact-header {
   font-weight: 700;
   font-size: 36px;
   line-height: 1.17;
@@ -494,10 +493,27 @@ footer .item:hover {
   margin: -15px;
 }
 
+.exemples a {
+  text-decoration: none;
+}
+
 .exemples .item {
   width: 370px;
   margin: 15px;
+
+  background: var(--primary-bgc);
+  border: 1px solid #EEEEEE;
 }
+
+.exemples .item:hover,
+.exemples .item:focus {
+  box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
+}
+
+.exemples-container {
+  padding: 20px 24px;
+}
+
 /* .exemples .item {
   width: 370px;
   margin-right: 30px;
@@ -532,4 +548,11 @@ margin-bottom: 0;
   color: var(--primary-bgc);
   background-color: var(--accent-color);
   text-decoration: none;
+}
+
+
+/* Contacts */
+
+.contact-container {
+  padding: 94px 0;
 }
