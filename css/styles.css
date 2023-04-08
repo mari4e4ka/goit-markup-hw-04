@@ -290,10 +290,22 @@ header .contact-item {
   display: block;
 }
 
-.activity .item:not(:last-child) {
+.activity-thumb:not(:last-child) {
   margin-right: 30px;
 }
 
+.activity-thumb {
+  position: relative;
+}
+
+.activity-thumb::before {
+  content: '';
+  position: absolute;
+  width: 100%;
+  height: 70px;
+  bottom: 0;
+  background-color: rgba(47, 48, 58, 0.8);
+}
 /* Our team */
 .team {
   /* max-width: 1600px; */
@@ -548,6 +560,19 @@ margin-bottom: 0;
   color: var(--primary-bgc);
   background-color: var(--accent-color);
   text-decoration: none;
+}
+
+.exemples a::before {
+  content: '';
+  position: absolute;
+  width: 370px;
+  height: 294px;
+  background: rgba(33, 150, 243, 0.9);
+  opacity: 0;
+}
+
+.exemples a:hover::before {
+  opacity: 1;
 }
 
 /* Contacts */
